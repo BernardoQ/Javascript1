@@ -1,5 +1,27 @@
-//if - else if - else
+//bucles for - while - do...while
+while(true){
+    let venta = prompt ('Introduzca el monto de venta entre 0 y 100:');
+    if(venta > 100 || venta < 0 || isNaN(venta)){
+                alert ('¡Error de entrada, vuelva a ingresar!');
+        }else{
+        if(venta == 100){
+                alert ('Recompensa: un viaje para vos y un acompañante');
+        break;
+        }else if(venta>=80 && venta<=90){
+                alert ('Recompensa: un iPhone');
+        break;
+        }else if(venta >=60 && venta<80){
+                alert ('Tus ventas son muy bajas, sigue esforzandote');
+        break;
+        }else{
+                alert ('Los resultados son muy malos');
+        break;
+        }
+    }
+}
 
+
+//if - else if - else
 const sumar = (num1,num2)=>{
     return parseInt(num1) + parseInt(num2);
 }
@@ -50,31 +72,5 @@ else{
     alert("Seleccione un parametro correcto");
 } 
 
-//bucles for - while - do...while
-
-
-
-/*
-while(true){
-    let venta = prompt ('Introduzca el monto de venta entre 0 y 100:');
-    if(venta > 100 || venta < 0 || isNaN(venta)){
-                alert ('¡Error de entrada, vuelva a ingresar!');
-        }else{
-        if(venta == 100){
-                alert ('Recompensa: un viaje para vos y un acompañante');
-        break;
-        }else if(venta>=80 && venta<=90){
-                alert ('Recompensa: un iPhone');
-        break;
-        }else if(venta >=60 && venta<80){
-                alert ('Tus ventas son muy bajas, sigue esforzandote');
-        break;
-        }else{
-                alert ('Los resultados son muy malos');
-        break;
-        }
-    }
-
-}*/
 
 
