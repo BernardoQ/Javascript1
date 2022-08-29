@@ -1,59 +1,76 @@
-//bucles for - while - do...while
+//SIMULADOR INTERACTIVO
+function Calcular() {
+    const monto = document.querySelector("#monto").value;
+  
+    const tasaInteres = document.querySelector("#tasaInteres").value;
+  
+    const meses = document.querySelector("#meses").value;
 
-//if - else if - else
-while(true){
-    const sumar = (num1,num2)=>{
-        return parseInt(num1) + parseInt(num2);
-    }
+    const intereses = (monto * (tasaInteres * 0.01)) / meses;
 
-    const restar = (num1,num2)=>{
-        return parseInt(num1) - parseInt(num2);
-    }
+    const total = ((monto / meses) + intereses).toFixed(2);
+  
+    document.querySelector("#total")
+        .innerHTML = "Total cuotas: ($)" + total;
+}  
 
-    const dividir = (num1,num2)=>{
-        return parseInt(num1) / parseInt(num2);
-    }
 
-    const multiplicar = (num1,num2)=>{
-        return parseInt(num1) * parseInt(num2);
-    }
-
-    let operacion = prompt("¿Que operacion desea realizar? \n 1: suma, 2: resta, 3: division, 4: multiplicacion");
-
-    if(operacion == 1 || operacion == "suma") {
-        let numero1 = prompt("ingrese el primer numero a operar");
-        let numero2 = prompt("ingrese el segundo numero a operar");
-        resultado = sumar(numero1, numero2);
-        alert(`El resultado es ${resultado}`);
-    }
-
-    else if(operacion == 2 || operacion == "resta") {
-        let numero1 = prompt("ingrese el primer numero a operar");
-        let numero2 = prompt("ingrese el segundo numero a operar");
-        resultado = restar(numero1, numero2);
-        alert(`El resultado es ${resultado}`);
-    }
-
-    else if(operacion == 3 || operacion == "division") {
-        let numero1 = prompt("ingrese el primer numero a operar");
-        let numero2 = prompt("ingrese el segundo numero a operar");
-        resultado = dividir(numero1, numero2);
-        alert(`El resultado es ${resultado}`);
-    }
-
-    else if(operacion == 4 || operacion == "multiplicacion") {
-        let numero1 = prompt("ingrese el primer numero a operar");
-        let numero2 = prompt("ingrese el segundo numero a operar");
-        resultado = multiplicar(numero1, numero2);
-        alert(`El resultado es ${resultado}`);
-    }
-
-    else{
-        alert("Seleccione un parametro correcto");
-    } 
+//CALCULADORA
+/*
+const sumar = (num1,num2)=>{
+    return parseInt(num1) + parseInt(num2);
 }
 
-/*while(true){
+const restar = (num1,num2)=>{
+    return parseInt(num1) - parseInt(num2);
+}
+
+const dividir = (num1,num2)=>{
+    return parseInt(num1) / parseInt(num2);
+}
+
+const multiplicar = (num1,num2)=>{
+    return parseInt(num1) * parseInt(num2);
+}
+
+let operacion = prompt("¿Que operacion desea realizar? \n 1: suma, 2: resta, 3: division, 4: multiplicacion");
+
+if(operacion == 1 || operacion == "suma") {
+    let numero1 = prompt("ingrese el primer numero a operar");
+    let numero2 = prompt("ingrese el segundo numero a operar");
+    resultado = sumar(numero1, numero2);
+    alert(`El resultado es ${resultado}`);
+}
+
+else if(operacion == 2 || operacion == "resta") {
+    let numero1 = prompt("ingrese el primer numero a operar");
+    let numero2 = prompt("ingrese el segundo numero a operar");
+    resultado = restar(numero1, numero2);
+    alert(`El resultado es ${resultado}`);
+}
+
+else if(operacion == 3 || operacion == "division") {
+    let numero1 = prompt("ingrese el primer numero a operar");
+    let numero2 = prompt("ingrese el segundo numero a operar");
+    resultado = dividir(numero1, numero2);
+    alert(`El resultado es ${resultado}`);
+}
+
+else if(operacion == 4 || operacion == "multiplicacion") {
+    let numero1 = prompt("ingrese el primer numero a operar");
+    let numero2 = prompt("ingrese el segundo numero a operar");
+    resultado = multiplicar(numero1, numero2);
+    alert(`El resultado es ${resultado}`);
+}
+
+else{
+    alert("Seleccione un parametro correcto");
+} */
+
+
+//PREMIOS VENTAS
+/*
+while(true){
     let venta = prompt ('Introduzca el monto de venta entre 0 y 100:');
     if(venta > 100 || venta < 0 || isNaN(venta)){
                 alert ('¡Error de entrada, vuelva a ingresar!');
@@ -72,6 +89,8 @@ while(true){
         break;
         }
     }
+
 }*/
+
 
 
