@@ -8,6 +8,27 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="calculador">
+        <h1>Calculador de prestamos</h1>
+  
+        <p>Monto Prestamo     :
+            <input id="monto" type="number" 
+            onchange="Calcular()">
+        </p>
+  
+        <p>Tasa de interes :
+            <input id="tasaInteres" type="number" 
+            onchange="Calcular()">
+        </p>
+  
+        <p>Cuotas mensuales :
+            <input id="meses" type="number" 
+            onchange="Calcular()">
+        </p>
+  
+        <h2 id="total"></h2>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
