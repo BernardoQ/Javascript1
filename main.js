@@ -1,18 +1,59 @@
 //SIMULADOR INTERACTIVO
-function Calcular() {
-    const monto = document.querySelector("#monto").value;
-  
-    const tasaInteres = document.querySelector("#tasaInteres").value;
-  
-    const meses = document.querySelector("#meses").value;
 
-    const intereses = (monto * (tasaInteres * 0.01)) / meses;
+function monto1(){
+    let monto1 = parseInt(prompt("ingresar cantidad a prestar"));
+    return monto1
+}
 
-    const total = ((monto / meses) + intereses).toFixed(2);
+function cuotas1(){
+    let cuotas1 = parseInt(prompt("¿En cuantas cuotas quiere pagar? elija de 1 a 12"));
+    return cuotas1
+}
+
+function intereses1(){
+    let intereses1 = parseInt(prompt("¿Cual es la tasa de interes?"));
+    return intereses1
+}
+
+let monto = monto1()
+let cuotas = cuotas1()
+let intereses = intereses1()
+
+function totalInteres(){
+    let interes = monto + (monto * (intereses * 0.01));
+    return interes
+}
+
+function dividir(dato1, dato2){
+    let resultado = dato1 / dato2;
+    return resultado
+}
+
+let totalIntereses = totalInteres()
+let totalCuotas = dividir(totalIntereses, cuotas)
+
+//Mostrar resultado
+document.write("Usted debe pagar " + cuotas + " cuotas de " + totalCuotas)
+
+
+
+//SIMULADOR PRESTAMOS INTERACTIVO
+
+/*
+ function Calcular() {
+     const monto = document.querySelector("#monto").value;
   
-    document.querySelector("#total")
-        .innerHTML = "Total cuotas: ($)" + total;
-}  
+     const tasaInteres = document.querySelector("#tasaInteres").value;
+  
+     const meses = document.querySelector("#meses").value;
+
+     const intereses = (monto * (tasaInteres * 0.01)) / meses;
+
+     const total = ((monto / meses) + intereses).toFixed(2)
+  
+     document.querySelector("#total")
+       .innerHTML = "Total cuotas: ($)" + total;
+}  */
 
 
 //CALCULADORA
@@ -91,6 +132,3 @@ while(true){
     }
 
 }*/
-
-
-
