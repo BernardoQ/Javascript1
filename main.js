@@ -30,7 +30,7 @@ function dividir(dato1, dato2){
 }
 
 let totalIntereses = totalInteres()
-let totalCuotas = dividir(totalIntereses, cuotas)
+let totalCuotas = dividir(totalIntereses, cuotas).toFixed(2)
 
 //Mostrar resultado
 document.write("Usted debe pagar " + cuotas + " cuotas de " + totalCuotas)
